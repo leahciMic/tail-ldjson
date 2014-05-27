@@ -45,7 +45,6 @@ files.forEach(function(file) {
         var dir = file;
         var files = fs.readdirSync(dir);
         files.forEach(function(file) {
-            console.log(file);
             var stats = fs.statSync(file);
             if (!stats.isFile()) {
                 return;
@@ -55,7 +54,6 @@ files.forEach(function(file) {
         });
     }
     fs.watch(file, { persistent: true }, function(type, file) {
-        console.log('watch', type, file);
         printNewLines(file, cache[file] || 0);
         var stats = fs.statSync(file);
         cache[file] = stats.size;
