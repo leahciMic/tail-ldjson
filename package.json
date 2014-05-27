@@ -1,0 +1,22 @@
+{
+  "name": "tail-ldjson",
+  "version": "0.0.2",
+  "description": "Tail line delimited json files",
+  "bin": {
+    "tailldjson": "./bin/tail.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leahciMic/tail-ldjson.git"
+  },
+  "main": "tail.js",
+  "dependencies": {
+    "prettyjson": "~1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Leaney <leahcimic@gmail.com>",
+  "license": "BSD"
+}
